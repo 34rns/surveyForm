@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://kit.fontawesome.com/4760bc976e.js" crossorigin="anonymous"></script>
+</head>
+
+<body> 
+    <header>
+        <h1 id="title">Future Life Survey Form</h1>
+      <p id="description">A survey form for your dream future life.</p>
+    </header>
+
+
+
+<form action="#" id="survey-form">
+
+    <fieldset class="personal-info">
+
+    <label for="name" id="name-label">Name</label>
+    <input type="text" name="name" id="name" placeholder="Enter your full name" required>
+    <label for="email" id="email-label">Email</label>
+    <input type="email" name="email" id="email" placeholder="Enter your email" required>
+    <label for="number" id="number-label">Age</label>
+    <input type="number" name="number" id="number" placeholder="What is your age ?" min="13" max="100" required>
+   
+   </fieldset>
+    
+    <fieldset class="job-selecter">
+        <label for="dropdown">Choose your job</label>
+    <select name="dreamjob" id="dropdown">
+        <option value="">Select your job</option>
+        <option value="1">Full-stack Developer</option>
+        <option value="2">Front-end Developer</option>
+        <option value="3">Back-end Developer</option>
+        <option value="4">Graphic Designer</option>
+        <option value="5">Game Developer</option>
+        <option value="6">Youtuber</option>
+        <option value="7">Video Editor</option>
+    </select>
+   </fieldset>
+
+  <fieldset class="salary">
+    <legend>What amount salary you want?</legend>
+    <div class="s-item">
+        <input type="radio" name="salary" id="very-low" value="very-low">
+        <label for="very-low">0-100$</label>
+    </div>
+    <div class="s-item">
+        <input type="radio" name="salary" id="low" value="low">
+        <label for="low">100-300$</label>
+    </div>
+    <div class="s-item">
+        <input type="radio" name="salary" id="medium" value="medium">
+        <label for="medium">300-800$</label>
+    </div>
+    <div class="s-item">
+        <input type="radio" name="salary" id="high" value="high">
+        <label for="high">800-12000$</label>
+    </div>
+    <div class="s-item">
+        <input type="radio" name="salary" id="highest" value="highest">
+        <label for="highest">12000-100000$</label>
+    </div>
+
+</fieldset>
+
+<fieldset class="list">
+    <legend>What is your unlimited budget shopping list</legend>
+    <div class="item">
+ <input type="checkbox" name="car-one" id="car-one" value="car-one">
+ <label for="car-one">GT-86</label>
+    </div>
+    <div class="item"> 
+        <input type="checkbox" name="car-two" id="car-two" value="car-two">
+        <label for="car-two">GTR</label>
+    </div>
+    <div class="item">
+        <input type="checkbox" name="car-three" id="car-three" value="car-three">
+        <label for="car-three">Audi R8</label>
+    </div>
+    <div class="item">
+        <input type="checkbox" name="car-four" id="car-four" value="car-four">
+        <label for="car-four">Mazda rx7</label>
+    </div>
+    <div class="item">
+        <input type="checkbox" name="world-tour" id="world-tour" value="world-tour">
+        <label for="world-tour">World Tour</label>
+    </div>
+
+</fieldset>
+
+
+
+
+    <fieldset class="cmnt">
+        <legend>If you want to describe write it down!</legend>
+        <textarea name="comment" id="cmnt" cols="30" rows="10" placeholder="Write your Comment"></textarea>
+    </fieldset>
+
+
+
+    
+    <button class="btn" type="submit" id="submit"><span>Submit</span></button>
+      
+</form>
+
+
+
+</body>
+
+</html>

@@ -35,7 +35,7 @@ fieldset{
 input[type='text'],input[type='email'],input[type='number'],select{
 	width: 100%;
 	margin-bottom: 0.7em;
-	min-height: 2em;
+	min-height: 4em;
 	padding: 0.2em 0.1em;
 }
 /* .salary{
